@@ -1,0 +1,51 @@
+body, html {
+    background-color: #111E25;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+h1 {
+    text-align:center;
+    color: #E6E6FA;
+    margin-top: 5%;
+    font-size: 60px;
+    letter-spacing: .2rem
+}
+
+form {
+    display: table-cell;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    background-color: #c0d7f8;
+    border: 3px solid gray;
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.47);
+}
+
+input {
+    padding: .25rem 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 2rem;
+    letter-spacing: .125rem;
+}
+
+.btn {
+  background-color: #374954;
+  width: 302px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}

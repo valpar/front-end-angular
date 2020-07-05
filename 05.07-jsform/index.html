@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <h1>Form login</h1>
     <div id="error"></div>
     <form action="/" method="GET">
         <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" required>
         </div>
         <div>
-            <label for="password">Password</label>
+            <label for="password">Password:</label>
             <input id="password" name="password" type="password">
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn">Submit</button>
     </form>
     
 </body>
