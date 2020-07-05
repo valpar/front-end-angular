@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(to right, #000000, #434343);
+    background-image: url(https://images.pexels.com/photos/548084/pexels-photo-548084.jpeg?cs=srgb&dl=architecture-buildings-city-cityscape-548084.jpg&fm=jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div {
+    font-family: 'Roboto Mono', monospace;
+    margin:70px auto;
+    width:600px;
+    height:310px;
+    border-radius:30px;
+    color:#546e7a;
+    text-align:center;
+    font-size:60px
+}

@@ -1,0 +1,13 @@
+body {background: linear-gradient(to right, #000046, #1cb5e0);}
+
+div {
+    font-family: 'Orbitron', sans-serif;
+    margin:70px auto;
+	background: #778ca3;
+    width:600px;
+    height:310px;
+    border-radius:30px;
+    color:#f5f6fa;
+    text-align:center;
+    font-size:60px
+}
