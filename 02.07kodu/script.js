@@ -1,3 +1,4 @@
+
 //kodutöö et kell tagurpidi töötaks alates 02.07.2020
 
 var countDownDate = new Date("Jan 1, 2021 12:00:00").getTime();
