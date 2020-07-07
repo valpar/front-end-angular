@@ -1,0 +1,10 @@
+@import  './_variables';
+@import  './_header';
+
+
+.contact  {
+     @include flexCenter(row, rgb(190, 170, 170));
+    //@extend header;
+
+}
+
