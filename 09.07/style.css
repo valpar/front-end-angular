@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0  
+}
+
+body {
+    color: #B1B1B1;
+    margin: 15px auto 0;
+    width: 410px;
+}
+
+div {
+    font-family: 'Orbitron', sans-serif;
+    margin:70px auto;
+	background: #778ca3;
+    width:600px;
+    height:310px;
+    border-radius:30px;
+    color:#f5f6fa;
+    text-align:center;
+    font-size:60px
+}

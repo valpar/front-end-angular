@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0  
+}
+
+ body {
+    color: #B1B1B1;
+    margin: 15px auto 0;
+    width: 410px;
+}
+
+.inactive {
+    color: red;
+}
+
+.inactive:hover{
+    cursor: pointer;
+}
+
+.inactive {
+    text-decoration: line-through;
+}
