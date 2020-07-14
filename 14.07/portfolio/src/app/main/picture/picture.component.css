@@ -1,0 +1,13 @@
+#main-picture {
+    height: 400px;
+    width: auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("src\assets\main.jpg");
+    background-size: 100%;
+    margin: 0 20%;
+    border-radius: 10px;
+    background-position: 0 20%;
+    background-repeat: no-repeat;
+    border: 0px;
+    padding: 0px;
+}

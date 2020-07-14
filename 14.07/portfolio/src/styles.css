@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    color:#636e72;
+    background-color: #ecf0f1;
+}
