@@ -1,2 +1,2 @@
 # front-end-angular
-Oma front end specialist
+Omis front end specialist
