@@ -7,7 +7,7 @@ import { FormService } from '../form.service';
   styleUrls: ['./review.component.css']
 })
 export class ReviewComponent implements OnInit {
-  person = {};
+  person: {firstname:string, lastname:string, phone:string, email:string};
 
   constructor(private formService : FormService) { }
 

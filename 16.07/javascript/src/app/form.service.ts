@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FormService {
-  form = {};
+  form: {firstname:string, lastname:string, phone:string, email:string};
 
   constructor() { }
 }
