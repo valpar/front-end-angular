@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Libre+Franklin:wght@200&display=swap');
+
+*{
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+body {
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+
+button {
+    color: #fd9644;
+    text-align: center;
+    display: inline-block;
+    background-color: Transparent;
+    text-decoration: none;
+    font-size: large;
+    border: 0;
+    cursor:pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+button:hover {
+    transition: 0.7s;
+    border-radius: 25px;
+    border: 1px solid #fa8231;
+    color: #fa8231;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align:center;
+    display: table;
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+div {
+    display: table;
+    margin: 0 auto;
+}
+
+.generate {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+.kassid{
+    width: 100%;
+    margin-top: 10%;
+}
