@@ -1,0 +1,15 @@
+<form [formGroup]="computerEditForm">
+    <label>Computer brand name:</label><br>
+    <input formControlName="producer" type="text" required><br>
+    <label>Computer model:</label><br>
+    <input formControlName="model" type="text" required><br>
+    <label>Processor:</label><br>
+    <input formControlName="processor" type="text" required><br>
+    <label>RAM:</label><br>
+    <input formControlName="ram" type="text" required><br>
+    <label>OP system:</label><br>
+    <input formControlName="op" type="text" required><br>
+    <label>Graphics card:</label><br>
+    <input formControlName="graphics_card" type="text" required><br>
+    <button type="button" [disabled]="!computerEditForm.valid" (click)="onSubmit(computerEditForm)">Change computer specs</button>
+</form>

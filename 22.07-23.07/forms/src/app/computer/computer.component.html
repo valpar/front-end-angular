@@ -1,0 +1,26 @@
+<form #computerForm="ngForm" (ngSubmit)="onSubmit(computerForm)">
+    <label>Computer brand name:</label><br>
+    <input ngModel name="producer" type="text" required><br>
+    <label>Computer model:</label><br>
+    <input ngModel name="model" type="text" required><br>
+    <label>Processor:</label><br>
+    <input ngModel name="processor" type="text" required><br>
+    <label>RAM:</label><br>
+    <input ngModel name="ram" type="text" required><br>
+    <label>OP system:</label><br>
+    <input ngModel name="op" type="text" required><br>
+    <label>Graphics card:</label><br>
+    <input ngModel name="graphics_card" type="text" required><br>
+    <button [disabled]="!computerForm.valid">Add computer</button>
+</form>
+
+<div *ngFor="let computer of computers; let i = index">
+    <br><br>
+    {{ computer.producer}} <br>
+    {{ computer.model}} <br>
+    {{ computer.processor}} <br>
+    {{ computer.ram}} <br>
+    {{ computer.op}} <br>
+    {{ computer.graphics_card}} <br>
+    <button [routerLink]="[i]">Change specs</button>
+</div>
