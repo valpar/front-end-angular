@@ -1,0 +1,33 @@
+.menu {
+  background-color: #785964;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu img {
+  width: 120px;
+  height: 50px;
+  margin: 5px;
+}
+
+.menu-link {
+  margin: 5px 10px;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+  transition-delay: 0.8ms;
+}
+
+.menu-header {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}

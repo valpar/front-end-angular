@@ -1,0 +1,36 @@
+.item-list {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.item {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  background-color: #2E3138;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.item:hover {
+  transition: .5s all;
+  box-shadow: 10px 10px 5px 0px rgba(95, 94, 94, 0.75);
+}
+
+.item img {
+  padding: 15px;
+  height: 170px;
+  width: 200px;
+}
+
+.item p {
+  padding: 5px;
+  margin: 8px 15px;
+}
