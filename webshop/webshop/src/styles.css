@@ -3,7 +3,7 @@
 
 
 *{
-  color: #93B7BE;
+  color: #E0E1DD;
   font-family: 'Cabin', sans-serif;
 }
 
@@ -13,4 +13,8 @@
 
 body{
   background-color: #F1FFFA;
+}
+
+button{
+  color: #1e272e;
 }

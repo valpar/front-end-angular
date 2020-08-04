@@ -21,6 +21,7 @@
 
 .item:hover {
   transition: .5s all;
+  background-color: #808e9b;
   box-shadow: 10px 10px 5px 0px rgba(95, 94, 94, 0.75);
 }
 

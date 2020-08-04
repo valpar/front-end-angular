@@ -1,0 +1,13 @@
+#itemForm{
+  margin-top: 200px;
+  display: block;
+  text-align: center;
+}
+
+#itemForm label, input {
+  color: #1e272e;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid#ff3f34;
+}
