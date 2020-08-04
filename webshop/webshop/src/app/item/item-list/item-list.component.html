@@ -1,3 +1,13 @@
+<h4>Basic mat-select</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Item categories</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let item of items" [value]="item.category">
+      {{item.category}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
 <div class="item-list">
   <div *ngFor="let item of items; let i = index" class="item" [routerLink]="['view',i]">
   <img src="{{ item.imgSrc }}">
