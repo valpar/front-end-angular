@@ -1,15 +1,15 @@
-<h4>Basic mat-select</h4>
-<mat-form-field appearance="fill">
+<mat-form-field appearance="fill" class="dropdown">
   <mat-label>Item categories</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let item of items" [value]="item.category">
+  <mat-select [(ngModel)]="selectedCategory">
+    <mat-option [value]="">All items</mat-option>
+    <mat-option *ngFor="let item of items | unique" [value]="item.category">
       {{item.category}}
     </mat-option>
   </mat-select>
 </mat-form-field>
 
 <div class="item-list">
-  <div *ngFor="let item of items; let i = index" class="item" [routerLink]="['view',i]">
+  <div *ngFor="let item of items | categoryFilter:selectedCategory; let i = index " class="item" [routerLink]="['view',i]">
   <img src="{{ item.imgSrc }}">
     <p>{{ item.title }}</p>  <br>
     <p>{{ item.price }}</p>

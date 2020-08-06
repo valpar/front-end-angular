@@ -1,7 +1,7 @@
-<br><br><br><br><br>
-
 <div class="item-view">
   <h3> {{'Inspect item:'}} {{ item.title }}</h3><br>
   <img src="{{ item.imgSrc }}"><br>
   <div>{{'Item price:'}} {{ item.price }}</div>
+  <br>
+  <button (click)="onAddToCart()">{{'Add to cart'}}</button>
 </div>
