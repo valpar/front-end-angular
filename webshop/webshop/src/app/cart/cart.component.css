@@ -1,9 +1,7 @@
 *{
   color: #2E3138;
-}
-
-.cart-items {
   text-align: center;
+  margin-top: 15px;
 }
 
 .empty-the-cart{
@@ -13,16 +11,9 @@
   padding: 10px;
   width: 8%;
   outline: none;
-  margin-top: 3%;
-  float: right;
 }
 
 .empty-the-cart:hover{
   transition: 0.5s;
   background-color: rgb(216, 102, 125);
-}
-
-.cart-sum{
-  float: right;
-  margin-top: 7%;
 }
