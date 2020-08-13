@@ -4,7 +4,7 @@
   <div>
     <div class="menu-link" routerLink="login">Login/Sign up</div>
     <div class="menu-link" routerLink="cart">
-      <span class="cartItemsCount">{{ cartItemsCount }}</span>
+      <span *ngIf="cartItemsCount > 0" class="cartItemsCount">{{ cartItemsCount }}</span>
       Cart
     </div>
   </div>

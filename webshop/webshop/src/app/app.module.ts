@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
-
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { ToastService, AngularToastifyModule } from 'angular-toastify'; 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +26,11 @@ import { from } from 'rxjs';
 import { UniquePipe } from './item/item-list/unique.pipe';
 import { CategoryFilterPipe } from './item/item-list/category-filter.pipe';
 import { CartComponent } from './cart/cart.component';
+import { ItemAllComponent } from './item/item-all/item-all.component';
+
+export function createHttpLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -41,7 +48,8 @@ import { CartComponent } from './cart/cart.component';
     ItemNewComponent,
     UniquePipe,
     CategoryFilterPipe,
-    CartComponent
+    CartComponent,
+    ItemAllComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +57,16 @@ import { CartComponent } from './cart/cart.component';
     FormsModule,
     BrowserAnimationsModule,
     MatSelectModule,
-    AngularToastifyModule
+    AngularToastifyModule,
+    BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+          useFactory: createHttpLoader, // exported factory function needed for AoT compilation
+          deps: [HttpClient]
+      }
+    })
   ],
   providers: [ToastService],
   bootstrap: [AppComponent]

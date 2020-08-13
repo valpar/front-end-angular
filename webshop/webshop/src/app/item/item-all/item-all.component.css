@@ -1,0 +1,16 @@
+*{
+  color: #2E3138;
+}
+
+.admin-item-list {
+  margin: 3% 1%;
+}
+
+.item {
+  margin-top: 1%;
+  border: 1px solid gray;
+}
+
+.inactive {
+  border: 1px solid red;
+}

@@ -17,3 +17,12 @@
   transition: 0.5s;
   background-color: rgb(216, 102, 125);
 }
+
+.cart-item{
+  margin: 5% 30% ;
+}
+
+.cart-item img {
+  width: 300px;
+  height: 300px;
+}

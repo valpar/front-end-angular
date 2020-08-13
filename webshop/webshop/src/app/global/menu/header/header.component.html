@@ -1,4 +1,7 @@
-<div class="menu-header" routerLink="/">
-  {{'Inters' | uppercase}}
+<br><div class="menu-header" routerLink="/">{{'Inters' | uppercase}}</div>
+<br><button routerLink="item/new">{{'Add items'| translate}}</button>
+<br><button routerLink="item/viewall">View items</button>
+<div>
+  <button (click)="useLanguage('en')">en</button>
+  <button (click)="useLanguage('ee')">ee</button>
 </div>
-<button routerLink="item/new">Add items</button>

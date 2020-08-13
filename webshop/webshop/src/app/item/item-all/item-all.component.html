@@ -8,13 +8,10 @@
   </mat-select>
 </mat-form-field>
 
-<div class="item-list">
-  <div *ngFor="let item of items | categoryFilter:selectedCategory; let i = index " class="item" [routerLink]="['view',i]">
-    <div *ngIf="item.visible">
-      <img src="{{ item.imgSrc }}">
-      <p>{{ item.title }}</p>
-      <p>{{ item.price }}</p>
-    </div>
+<div class="admin-item-list">
+  <div *ngFor="let item of items | categoryFilter:selectedCategory; let i = index " class="item" [class.inactive]="!item.visible" (click)="onInactive(i)">
+    <p>{{ item.title }}</p> 
+    <p>{{ item.price }}</p>
   </div>
 </div>
 

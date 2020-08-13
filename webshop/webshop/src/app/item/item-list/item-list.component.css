@@ -6,6 +6,8 @@
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 60px;
+  border: darkred;
+  color: #2E3138;
 }
 
 .item {
