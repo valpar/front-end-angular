@@ -9,9 +9,15 @@
 </mat-form-field>
 
 <div class="admin-item-list">
-  <div *ngFor="let item of items | categoryFilter:selectedCategory; let i = index " class="item" [class.inactive]="!item.visible" (click)="onInactive(i)">
+  <div *ngFor="let item of items |
+   categoryFilter:selectedCategory;
+    let i = index " 
+    class="item" 
+    [class.inactive]="!item.visible" 
+    (click)="onInactive(i)">
     <p>{{ item.title }}</p> 
     <p>{{ item.price }}</p>
+    <button [routerLink]='["/edit",i]'>{{'Edit'}}</button>
   </div>
 </div>
 

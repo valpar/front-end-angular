@@ -31,4 +31,8 @@ export class ItemService {
   changeVisibleState(i: number): void {
     this.items[i]['visible'] = !this.items[i]["visible"]
   }
+
+  updateItem(i: number, newItem: Item) {
+    this.items[i] = newItem;
+  }
 }

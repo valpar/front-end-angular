@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -22,11 +22,12 @@ import { SignupComponent } from './authentication/signup/signup.component';
 import { NotFoundComponent } from './global/not-found/not-found.component';
 import { HeaderComponent } from './global/menu/header/header.component';
 import { ItemNewComponent } from './item/item-new/item-new.component';
-import { from } from 'rxjs';
 import { UniquePipe } from './item/item-list/unique.pipe';
 import { CategoryFilterPipe } from './item/item-list/category-filter.pipe';
 import { CartComponent } from './cart/cart.component';
 import { ItemAllComponent } from './item/item-all/item-all.component';
+import { SidebarComponent } from './global/sidebar/sidebar.component';
+import { ItemEditComponent } from './item/item-edit/item-edit.component';
 
 export function createHttpLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -49,12 +50,15 @@ export function createHttpLoader(http: HttpClient) {
     UniquePipe,
     CategoryFilterPipe,
     CartComponent,
-    ItemAllComponent
+    ItemAllComponent,
+    SidebarComponent,
+    ItemEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSelectModule,
     AngularToastifyModule,
