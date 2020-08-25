@@ -1,3 +1,9 @@
 {
-  "Add items": "Lisa esemeid"
+  "Add items": "Lisa esemeid",
+  "View items": "Vaata esemeid",
+  "Item added": "Toode lisatud",
+  "Select item categories" : "Vali kategooria",
+  "Order by": "Sorteeri",
+  "Cart": "Ostukorv",
+  "Login": "Logi sisse"
 }

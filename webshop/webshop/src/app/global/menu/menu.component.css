@@ -15,6 +15,7 @@
 
 .menu-link {
   margin: 5px 10px;
+  cursor: pointer;
 }
 
 .menu-link:hover {

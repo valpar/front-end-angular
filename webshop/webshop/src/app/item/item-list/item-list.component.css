@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 60px;
-  border: darkred;
   color: #2E3138;
 }
 
@@ -21,6 +20,7 @@
 }
 
 .item:hover {
+  cursor: pointer;
   transition: .5s all;
   background-color: #808e9b;
   box-shadow: 10px 10px 5px 0px rgba(95, 94, 94, 0.75);
@@ -40,5 +40,12 @@
 .dropdown {
   display: table;
   margin: 15px auto;
+  color: #2E3138 !important;
+  background-color: grey;
+}
+
+.items-sort {
+  display: flex;
+  justify-content: space-between;
   color: #2E3138;
 }

@@ -1,15 +1,27 @@
-<mat-form-field appearance="fill" class="dropdown">
-  <mat-label>Item categories</mat-label>
-  <mat-select [(ngModel)]="selectedCategory">
-    <mat-option [value]="">All items</mat-option>
-    <mat-option *ngFor="let item of items | unique" [value]="item.category">
-      {{item.category}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+<div class="items-sort">
+  <mat-form-field appearance="fill" class="dropdown">
+    <mat-label>{{ 'Select item categories' | translate }}</mat-label>
+    <mat-select [(ngModel)]="selectedCategory">
+      <mat-option [value]="">All items</mat-option>
+      <mat-option *ngFor="let item of items | unique" [value]="item.category">
+        {{item.category}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
+  <mat-form-field appearance="fill" class="dropdown">
+    <mat-label>{{'Order by' | translate}}</mat-label>
+    <mat-select>
+      <mat-option value="" (click)="onSortAll()">All items</mat-option>
+      <mat-option value="" (click)="onSortPriceAsc()">Price - highest first</mat-option>
+      <mat-option value="" (click)="onSortPriceDesc()">Price - lowest first</mat-option>
+      <mat-option value="" (click)="onSortTitleAsc()">Title - A to Z </mat-option>
+      <mat-option value="" (click)="onSortTitleDesc()">Title - Z to A </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
 <div class="item-list">
-  <div *ngFor="let item of items | categoryFilter:selectedCategory; let i = index " class="item" [routerLink]="['view',i]">
+  <div *ngFor="let item of itemsShown | categoryFilter:selectedCategory; let i = index " class="item" [routerLink]="['view',i]">
     <div *ngIf="item.visible">
       <img src="{{ item.imgSrc }}">
       <p>{{ item.title }}</p>
