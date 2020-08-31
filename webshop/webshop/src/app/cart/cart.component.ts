@@ -22,8 +22,8 @@ export class CartComponent implements OnInit {
 
   getItemsFromService() {
     let itemsFromService = this.cartService.getItems();
-    this.itemsInCart = itemsFromService.map(item => ({...item, price: item.price.
-    split('$')[2] ? item.price.split('$')[2] : item.price.split('$')[1] }));
+    // this.itemsInCart = itemsFromService.map(item => ({...item, price: item.price.
+    // split('$')[2] ? item.price.split('$')[2] : item.price.split('$')[1] }));
   }
 
   onRemoveFromCart(i: number) {

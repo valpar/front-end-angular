@@ -8,14 +8,16 @@ import { ItemService } from '../item.service';
   styleUrls: ['./item-all.component.css']
 })
 export class ItemAllComponent implements OnInit {
-  items: Item[]
+  items: Item[] = [];
   selectedCategory: string;
 
   constructor(private itemService: ItemService) { }
 
   ngOnInit(): void {
-    this.items = this.itemService.getItems();
-    console.log(this.items);
+    this.itemService.fetchItems().subscribe(response => 
+      {
+        this.items = response;
+      });
   }
 
   onInactive(i){
@@ -25,8 +27,10 @@ export class ItemAllComponent implements OnInit {
   }
 
   onSendToDb(){
-    this.items = this.items.map(item => ({...item, price: item.price.
-    split('$')[2] ? item.price.split('$')[2] : item.price.split('$')[1] }));
+    // this.items = this.items.map(item => ({...item, price: item.price.
+    // split('$')[2] ? item.price.split('$')[2] : item. price.split('$')[1] }));
+
+    
     this.itemService.saveItems(this.items);
   }
 }

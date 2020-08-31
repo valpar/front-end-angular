@@ -44,7 +44,16 @@ export class ItemEditComponent implements OnInit {
   }
 
   onSubmit(form: FormGroup){
-    this.itemService.updateItem(this.id, form.value);
+
+    let updatedItem = new Item(
+      form.value.imgSrc,
+      form.value.title,
+      form.value.price,
+      form.value.category,
+      true
+    )
+
+    this.itemService.updateItem(this.id, updatedItem);
     // this.router.navigateByUrl('/item/viewall');
     this.toastService.success(this.translate.instant('Item changed'));
 
