@@ -1,26 +1,30 @@
-<div *ngIf="itemsInCart.length; else noItemsInCart">
-  <button class="empty-the-cart" (click)="onEmptyCart()">Empty the cart</button>
 
-  <div class="cart-sum">Cart sum total: {{ sumOfCart }} $</div>
+<div *ngIf="itemsInCart.length > 0 ; else noItemsInCart">
+<div class="spacer">
+    <button class="empty-the-cart" (click)="onEmptyCart()">Empty the cart</button>
 
-  <div class="cart-items">
-    <div class="cart-item" *ngFor="let item of itemsInCart; let i = index">
-      <h3> {{'Inspect item:'}} {{ item.title }}</h3><br>
-      <img src="{{ item.imgSrc }}"><br>
-      <div>{{'Item price:'}} {{ item.price }}</div>
-      <br>
-      <button (click)="onRemoveFromCart()">{{ 'Remove from cart' }}</button>
+    <div class="cart-sum">Cart sum total: {{ sumOfCart }} $</div>
+
+    <div class="cart-items">
+      <div class="cart-item" *ngFor="let item of itemsInCart; let i = index">
+        <img src="{{ item.imgSrc }}"><br>
+        <div class="cell"> {{'Inspect item:'}} {{ item.title }}</div><br>
+        <div class="cell-price">{{'Item price:'}} {{ item.price }}</div>
+        <br>
+        <img class="remove-button" src="../../assets/trashcan.svg" (click)="onRemoveFromCart()">
+      </div>
     </div>
   </div>
 </div>
 
-<ng-template #noItemsInCart>
-  {{ 'No items in cart' }}
-</ng-template>
-
+  <ng-template #noItemsInCart>
+    <div class="no-items">
+      {{ 'No items in cart' }}
+    </div>
+  </ng-template>
 
 <lib-toastify-toast-container 
-[position]="'bottom-right'"
-[iconLibrary]="'material'"
+  [position]="'bottom-right'"
+  [iconLibrary]="'material'"
 ></lib-toastify-toast-container>
 

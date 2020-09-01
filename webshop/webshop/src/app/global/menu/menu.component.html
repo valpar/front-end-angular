@@ -4,8 +4,12 @@
   <div>
     <div class="menu-link" routerLink="login">Login/Sign up</div>
     <div class="menu-link" routerLink="cart">
-      <span *ngIf="cartItemsCount > 0" class="cartItemsCount">{{ cartItemsCount }}</span>
+      <span *ngIf="cartItemsCount > 0" class="cart-items-count">{{ cartItemsCount }}</span>
       Cart
+    </div>
+    <div>
+      <span class="lang-button" (click)="useLanguage('en')">en</span>
+      <span class="lang-button" (click)="useLanguage('ee')">ee</span>
     </div>
   </div>
 </div>

@@ -3,7 +3,9 @@
   <img src="{{ item.imgSrc }}"><br>
   <div>{{'Item price:'}} {{ item.price }}</div>
   <br>
-  <button (click)="onAddToCart()">{{'Add to cart'}}</button>
+  <div class="wrapper">
+     <a (click)="onAddToCart()"><span>{{'Add to cart'}}</span></a>
+  </div>
 </div>
 
 
