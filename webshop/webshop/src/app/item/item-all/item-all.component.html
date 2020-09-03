@@ -8,7 +8,7 @@
   </mat-select>
 </mat-form-field>
 <br>
-<button (click)="onSendToDb()">Send all items to Database</button>
+<button class="main-button" (click)="onSendToDb()">Send all items to Database</button>
 <br>
 <div class="admin-item-list">
   <div *ngFor="let item of items |
@@ -19,7 +19,7 @@
     (click)="onInactive(i)">
     <p>{{ item.title }}</p> 
     <p>{{ item.price }}</p>
-    <button [routerLink]='["/edit",i]'>{{'Edit'}}</button>
+    <button class="main-button shortend" [routerLink]='["/edit",i]'>{{'Edit'}}</button>
   </div>
 </div>
 

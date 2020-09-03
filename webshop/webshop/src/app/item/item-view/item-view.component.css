@@ -1,57 +1,44 @@
-.item-view{
-  margin-top: 100px;
-  display: block;
-  text-align: center;
-}
-
 *{
   color: #1e272e;
+}
+
+.item-header {
+  display: flex;
+}
+
+.item-title{
+  margin-top: 5%;
+  font-size: 1.2em;
+  flex-basis: 300px;
+  margin: 10%;
+
+}
+
+.item-price{
+  margin-left: 20% auto;
+  font-size: 1.2em;
+}
+
+
+.item-view{
+  margin: 10%;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  padding-left: 10%;
+  background-color: white;
 }
 
 .item-view img {
   width: 300px;
   height: 300px;
 }
-.wrapper{
-  position: absolute;
-  top: 85%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-}
 
-a{
+.bigger {
+  padding: 20px;
+  width: 16%;
+  outline: none;
   cursor: pointer;
-  display: block;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #333;
-  border: 2px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-}
-
-a span{
-  position: relative;
-  z-index: 2;
-}
-
-a:after{
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #D5C7BC;
-  transition: all .35s;
-}
-
-a:hover:after{
-  width: 100%;
+  font-size: 1.5 !important;
+  margin-left: 5% auto;
 }

@@ -38,9 +38,8 @@
 
 .dropdown {
   display: table;
-  margin: 15px auto;
-  color: #2E3138 !important;
-  background-color: grey;
+  margin: 20px auto;
+  background-color: #2E3138;
 }
 
 .items-sort {

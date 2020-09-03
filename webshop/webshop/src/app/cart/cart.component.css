@@ -11,20 +11,6 @@
   padding: 15px;
 }
 
-.empty-the-cart{
-  background-color: crimson;
-  color: #fff;
-  border: 1px solid;
-  padding: 10px;
-  width: 8%;
-  outline: none;
-}
-
-.empty-the-cart:hover{
-  transition: 0.5s;
-  background-color: rgb(216, 102, 125);
-}
-
 .cart-item{
   display: flex;
   padding: 20px 0;

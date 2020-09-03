@@ -1,0 +1,22 @@
+.form-input-material {
+  --input-default-border-color: white;
+  --input-border-bottom-color: white;
+}
+.form-input-material input {
+  color: white;
+}
+
+input{
+  text-align: center;
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit {
+  width: 15%;
+}

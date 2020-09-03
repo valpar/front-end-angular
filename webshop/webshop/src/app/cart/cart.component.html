@@ -1,7 +1,7 @@
 
 <div *ngIf="itemsInCart.length > 0 ; else noItemsInCart">
 <div class="spacer">
-    <button class="empty-the-cart" (click)="onEmptyCart()">Empty the cart</button>
+    <button class="main-button" (click)="onEmptyCart()">Empty the cart</button>
 
     <div class="cart-sum">Cart sum total: {{ sumOfCart }} $</div>
 
